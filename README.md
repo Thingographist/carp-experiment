@@ -11,5 +11,5 @@ make dill
 # Запуск
 
 ```
-make clean bld run
+make cln bld run
 ```
