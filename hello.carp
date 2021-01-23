@@ -1,0 +1,11 @@
+(use IO)
+
+(relative-include "mylibdill.h")
+(register go (Fn [] ()) "GO_call")
+
+(Project.config "title" "Hello")
+(add-cflag "-std=c11")
+
+(defn-do main []
+  (go)
+  (println "done"))
